@@ -1,0 +1,69 @@
+<html>
+  <head>
+
+    <style type="text/css">
+#grid-wrap{
+      width:100%;
+      height:100%;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap:10px;
+}
+     #grid-1{
+        justify-items:right;
+      }
+
+      #grid-2{
+
+        justify-items:left;
+      }
+      .grid{
+        height:100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: min-content;
+        grid-gap: 10px;
+        justify-items:left;
+        align-items:bottom;
+      }
+      img{
+        display:block;
+        position:relative;
+        max-height:450px;
+      }
+      .img2{
+        max-height:300px;
+      }
+    </style>
+  
+  </head>
+  <body>
+  
+    <main>
+    
+    <div id="grid-wrap">
+
+      <div class="grid" id="grid-1">
+         <img class="img1" src="./01.jpg"/>
+         <img class="img3" src="./03.jpg"/>
+      </div>
+
+      <div class="grid" id="grid-2">
+
+         <img class="img2" src="./02.jpg"/>
+         <img class="img4" src="./04.jpg"/>
+      </div>
+    </div>
+    
+    </main>
+  
+  </body>
+
+
+</html>
+
+
+
+
+
